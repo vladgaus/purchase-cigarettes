@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" colors="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+  <coverage processUncoveredFiles="true">
+    <include>
+      <directory suffix=".php">./</directory>
+    </include>
+    <exclude>
+      <directory>./src/Command/</directory>
+      <directory>./tests</directory>
+      <directory>./vendor</directory>
+    </exclude>
+  </coverage>
+  <testsuites>
+    <testsuite name="Test for Cigarette Machine">
+      <directory suffix=".php">./tests/</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>
